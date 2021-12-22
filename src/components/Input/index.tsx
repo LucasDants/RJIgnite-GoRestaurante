@@ -4,7 +4,7 @@ import {
   useState,
   useCallback,
   InputHTMLAttributes,
-  ReactNode,
+  ElementType,
 } from 'react';
 
 import { useField } from '@unform/core';
@@ -13,7 +13,7 @@ import { Container } from './styles';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   name: string
-  icon?: ReactNode | any
+  icon?: ElementType
 }
 
 const Input = ({ name, icon: Icon, ...rest }: InputProps) => {
